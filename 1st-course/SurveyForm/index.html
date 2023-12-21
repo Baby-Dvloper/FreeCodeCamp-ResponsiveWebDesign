@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">
+      Pellentesque ornare non sem quis dapibus. Vestibulum gravida risus
+      imperdiet metus iaculis efficitur. Cras quis varius est, ac gravida neque.
+      Sed sit amet tempus odio.
+    </p>
+    <form id="survey-form">
+      <label id="name-label"
+        >Name: <input id="name" type="text" placeholder="Your Name" required
+      /></label>
+      <label id="email-label"
+        >Email:
+        <input id="email" type="email" placeholder="Your Email" required
+      /></label>
+      <label id="number-label"
+        >Number:
+        <input
+          id="number"
+          type="number"
+          min="5"
+          max="120"
+          placeholder="Your age"
+      /></label>
+
+      <label>
+        ¿Qué calificación le darias al servicio revicio recibido?
+        <select name="" id="dropdown">
+          <option value="">(select one)</option>
+          <option value="1">Malo</option>
+          <option value="2">Mediocre</option>
+          <option value="3">Bueno</option>
+          <option value="4">Muy Bueno</option>
+          <option value="5">Excelente</option>
+        </select>
+      </label>
+
+      <fieldset>
+        <legend>Tipo de Tratamiento Recibido</legend>
+        <label for="">
+          <input type="radio" name="service" />
+          Vacuna 1
+        </label>
+        <label for="">
+          <input type="radio" name="service" />
+          Vacuna 2
+        </label>
+        <label for="">
+          <input type="radio" name="service" />
+          Vacuna 3
+        </label>
+        <label for="">
+          <input type="radio" name="service" />
+          Baño/Limpieza
+        </label>
+        <label for="">
+          <input type="radio" name="service" />
+          Corte de Pelo
+        </label>
+        <label>
+          <input type="radio" name="service" />
+          Esterilización
+        </label>
+        <label>
+          <input type="radio" name="service" />
+          Radiografía
+        </label>
+        <label>
+          <input type="radio" name="service" />
+          Operación
+        </label>
+        <label>
+          <input type="radio" name="service" />
+          Otro
+        </label>
+      </fieldset>
+    </form>
+  </body>
+</html>
