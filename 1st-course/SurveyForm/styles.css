@@ -1,5 +1,44 @@
 body {
   background-color: #1a1a1a;
   color: #fdfeff;
+  font-family: "Inter", sans-serif;
+  font-size: 1.125rem;
 }
 
+body > h1 {
+  text-align: center;
+}
+
+body > p {
+  max-width: 600px;
+  margin: 1em auto;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+#owner-data label,
+#pet-data label {
+  display: block;
+}
+
+#owner-data input,
+#pet-data input,
+#pet-data select {
+  width: 100%;
+  min-height: 2em;
+}
+
+legend {
+  font-size: 1.5rem;
+}
+
+fieldset {
+  margin-bottom: 1rem;
+}
