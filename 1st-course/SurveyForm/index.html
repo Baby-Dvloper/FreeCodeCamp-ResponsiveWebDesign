@@ -11,224 +11,265 @@
       rel="stylesheet"
     />
   </head>
-  <body>
-    <h1 id="title">Survey Form</h1>
-    <p id="description">
-      Pellentesque ornare non sem quis dapibus. Vestibulum gravida risus
-      imperdiet metus iaculis efficitur. Cras quis varius est, ac gravida neque.
-      Sed sit amet tempus odio.
-    </p>
-    <form id="survey-form">
-      <fieldset id="owner-data">
-        <legend>Datos del Dueño</legend>
-        <label id="name-label"
-          >Nombre:
-          <input id="name" type="text" placeholder="Your Name" required
-        /></label>
-        <label id="email-label"
-          >Email:
-          <input id="email" type="email" placeholder="Your Email" required
-        /></label>
-        <label id="number-label"
-          >Edad:
-          <input
-            id="number"
-            type="number"
-            min="5"
-            max="120"
-            placeholder="Your age"
-        /></label>
-      </fieldset>
+  <body id="gradient-border">
+    <div id="principal">
+      <h1 id="title">Survey Form</h1>
+      <p id="description">
+        Pellentesque ornare non sem quis dapibus. Vestibulum gravida risus
+        imperdiet metus iaculis efficitur. Cras quis varius est, ac gravida
+        neque. Sed sit amet tempus odio.
+      </p>
+      <form id="survey-form">
+        <fieldset id="owner-data">
+          <legend>Datos del Dueño</legend>
+          <label id="name-label"
+            >Nombre:
+            <input id="name" type="text" placeholder="Your Name" required
+          /></label>
+          <label id="email-label"
+            >Email:
+            <input id="email" type="email" placeholder="Your Email" required
+          /></label>
+          <label id="number-label"
+            >Tu edad:
+            <input
+              id="number"
+              type="number"
+              min="5"
+              max="120"
+              placeholder="Your age"
+          /></label>
+        </fieldset>
 
-      <fieldset id="pet-data">
-        <legend>Datos de la Mascota</legend>
-        <label>
-          Nombre de la Mascota
-          <input type="text" name="pet-name" />
-        </label>
-        <label for="pet-type"
-          >Tipo de mascota:
-          <select id="pet-type">
-            <option>Selecciona uno</option>
-            <option>Gato</option>
-            <option>Perro</option>
-            <option>Hamster</option>
-            <option>Ave</option>
-            <option>Serpiente</option>
-            <option>Tortuga</option>
-          </select>
-        </label>
-      </fieldset>
+        <fieldset id="pet-data">
+          <legend>Datos de la Mascota</legend>
+          <label>
+            Nombre de la Mascota
+            <input type="text" name="pet-name" />
+          </label>
+          <label for="pet-type"
+            >Tipo de mascota:
+            <select id="pet-type">
+              <option>Selecciona uno</option>
+              <option>Gato</option>
+              <option>Perro</option>
+              <option>Hamster</option>
+              <option>Ave</option>
+              <option>Serpiente</option>
+              <option>Tortuga</option>
+            </select>
+          </label>
+        </fieldset>
 
-      <fieldset>
-        <legend>Tipo de Tratamiento Recibido</legend>
-        <label>
-          <input type="radio" name="service" value="treatment" />
-          Enfermedad / tratamiento
-        </label>
-        <label for="">
-          <input type="radio" name="service" value="Vaccine 1" />
-          Vacuna 1
-        </label>
-        <label for="">
-          <input type="radio" name="service" value="Vaccine 2" />
-          Vacuna 2
-        </label>
-        <label for="">
-          <input type="radio" name="service" value="Vaccine 3" />
-          Vacuna 3
-        </label>
-        <label for="">
-          <input type="radio" name="service" value="bath" />
-          Baño/Limpieza
-        </label>
-        <label for="">
-          <input type="radio" name="service" value="esthetics" />
-          Corte de Pelo
-        </label>
-        <label>
-          <input type="radio" name="service" value="spaying/neutering" />
-          Esterilización
-        </label>
-        <label>
-          <input type="radio" name="service" value="X-ray" />
-          Radiografía
-        </label>
-        <label>
-          <input type="radio" name="service" value="surgery" />
-          Operación / Cirugía
-        </label>
-        <label>
-          <input type="radio" name="service" value="other" />
-          Otro
-        </label>
-        <input type="text" name="other-service" />
-        <label>
-          ¿Qué calificación le darias al servicio recibido?
-          <select name="" id="dropdown">
-            <option value="">(select one)</option>
-            <option value="1">Malo</option>
-            <option value="2">Mediocre</option>
-            <option value="3">Bueno</option>
-            <option value="4">Muy Bueno</option>
-            <option value="5">Excelente</option>
-          </select>
-        </label>
-      </fieldset>
-      <fieldset>
-        <legend>
-          Selecciona las cosas que más te gustaron o agradaron de nuestro
-          servicio
-        </legend>
-        <div>
-          <p>Experiencia General:</p>
-          <div>
+        <fieldset id="Treatments">
+          <legend>Tipo de Tratamiento Recibido</legend>
+          <label class="label-service" for="option-1">
             <input
-              type="checkbox"
-              id="experience-1"
-              name="general-experience"
-              value="satisfaction-received-attention"
+              type="radio"
+              name="service"
+              value="treatment"
+              id="option-1"
             />
-            <label for="experience-1"
-              >Satisfacción con la atención recibida</label
-            >
+            Enfermedad / tratamiento
+          </label>
+          <label class="label-service" for="option-2">
+            <input
+              type="radio"
+              name="service"
+              value="Vaccine 1"
+              id="option-2"
+            />
+            Vacuna 1
+          </label>
+          <label class="label-service" for="option-3">
+            <input
+              type="radio"
+              name="service"
+              value="Vaccine 2"
+              id="option-3"
+            />
+            Vacuna 2
+          </label>
+          <label class="label-service" for="option-4">
+            <input
+              type="radio"
+              name="service"
+              value="Vaccine 3"
+              id="option-4"
+            />
+            Vacuna 3
+          </label>
+          <label class="label-service" for="option-5">
+            <input type="radio" name="service" value="bath" id="option-5" />
+            Baño/Limpieza
+          </label>
+          <label class="label-service" for="option-6">
+            <input
+              type="radio"
+              name="service"
+              value="esthetics"
+              id="option-6"
+            />
+            Corte de Pelo
+          </label>
+          <label class="label-service" for="option-7">
+            <input
+              type="radio"
+              name="service"
+              value="spaying/neutering"
+              id="option-7"
+            />
+            Esterilización
+          </label>
+          <label class="label-service" for="option-8">
+            <input type="radio" name="service" value="X-ray" id="option-8" />
+            Radiografía
+          </label>
+          <label class="label-service" for="option-9">
+            <input type="radio" name="service" value="surgery" id="option-9" />
+            Operación / Cirugía
+          </label>
+          <div>
+            <label class="label-service" for="option-10">
+              <input type="radio" name="service" value="other" id="option-10" />
+              Otro
+            </label>
+            <input type="text" name="other-service" />
+          </div>
+          <label class="label-service">
+            ¿Qué calificación le darias al servicio recibido?
+            <select name="" id="dropdown">
+              <option value="">(select one)</option>
+              <option value="1">Malo</option>
+              <option value="2">Mediocre</option>
+              <option value="3">Bueno</option>
+              <option value="4">Muy Bueno</option>
+              <option value="5">Excelente</option>
+            </select>
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>
+            Selecciona las cosas que más te gustaron o agradaron de nuestro
+            servicio
+          </legend>
+          <div>
+            <p>Experiencia General:</p>
+            <div>
+              <input
+                type="checkbox"
+                id="experience-1"
+                name="general-experience"
+                value="satisfaction-received-attention"
+              />
+              <label for="experience-1"
+                >Satisfacción con la atención recibida</label
+              >
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                id="experience-2"
+                name="general-experience"
+                value="acceptable-waiting-time"
+              />
+              <label for="experience-2">Tiempo de espera aceptable</label>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                id="experience-3"
+                name="general-experience"
+                value="friendliness-of-the-staff"
+              />
+              <label for="experience-3">Amabilidad del personal</label>
+            </div>
           </div>
           <div>
-            <input
-              type="checkbox"
-              id="experience-2"
-              name="general-experience"
-              value="acceptable-waiting-time"
-            />
-            <label for="experience-2">Tiempo de espera aceptable</label>
+            <p>Comunicación:</p>
+            <div>
+              <input
+                type="checkbox"
+                id="comunication-1"
+                name="comunication"
+                value=" Clarity in the veterinarian's explanations"
+              />
+              <label for="comunication-1"
+                >Claridad en las explicaciones del veterinario</label
+              >
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                id="comunication-2"
+                name="comunication"
+                value=" Ease-understanding-diagnosis"
+              />
+              <label for="comunication-2"
+                >Facilidad para entender el diagnóstico</label
+              >
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                id="comunication-3"
+                name="comunication"
+                value="Effective-communication-costs-treatment-options"
+              />
+              <label for="comunication-3"
+                >Comunicación efectiva sobre costos y opciones de
+                tratamiento</label
+              >
+            </div>
           </div>
           <div>
-            <input
-              type="checkbox"
-              id="experience-3"
-              name="general-experience"
-              value="friendliness-of-the-staff"
-            />
-            <label for="experience-3">Amabilidad del personal</label>
+            <p>Servicios Médicos:</p>
+            <div>
+              <input
+                id="medical-service-1"
+                type="checkbox"
+                name="medical-services"
+                value="Effectiveness of recommended treatments"
+              />
+              <label for="medical-service-1"
+                >Eficacia de los tratamientos recomendados</label
+              >
+            </div>
+            <div>
+              <input
+                id="medical-service-2"
+                type="checkbox"
+                name="medical-services"
+                value="Clarity-post-treatment-instructions"
+              />
+              <label for="medical-service-2"
+                >Claridad en las instrucciones post-tratamiento</label
+              >
+            </div>
+            <div>
+              <input
+                id="medical-service-3"
+                type="checkbox"
+                name="medical-services"
+                value="Post-treatment-follow-up"
+              />
+              <label for="medical-service-3"
+                >Seguimiento post-tratamiento</label
+              >
+            </div>
           </div>
-        </div>
-        <div>
-          <p>Comunicación:</p>
-          <div>
-            <input
-              type="checkbox"
-              id="comunication-1"
-              name="comunication"
-              value=" Clarity in the veterinarian's explanations"
-            />
-            <label for="comunication-1"
-              >Claridad en las explicaciones del veterinario</label
-            >
-          </div>
-          <div>
-            <input
-              type="checkbox"
-              id="comunication-2"
-              name="comunication"
-              value=" Ease-understanding-diagnosis"
-            />
-            <label for="comunication-2"
-              >Facilidad para entender el diagnóstico</label
-            >
-          </div>
-          <div>
-            <input
-              type="checkbox"
-              id="comunication-3"
-              name="comunication"
-              value="Effective-communication-costs-treatment-options"
-            />
-            <label for="comunication-3"
-              >Comunicación efectiva sobre costos y opciones de
-              tratamiento</label
-            >
-          </div>
-        </div>
-        <div>
-          <p>Servicios Médicos:</p>
-          <div>
-            <input
-              id="medical-service-1"
-              type="checkbox"
-              name="medical-services"
-              value="Effectiveness of recommended treatments"
-            />
-            <label for="medical-service-1"
-              >Eficacia de los tratamientos recomendados</label
-            >
-          </div>
-          <div>
-            <input
-              id="medical-service-2"
-              type="checkbox"
-              name="medical-services"
-              value="Clarity-post-treatment-instructions"
-            />
-            <label for="medical-service-2"
-              >Claridad en las instrucciones post-tratamiento</label
-            >
-          </div>
-          <div>
-            <input
-              id="medical-service-3"
-              type="checkbox"
-              name="medical-services"
-              value="Post-treatment-follow-up"
-            />
-            <label for="medical-service-3">Seguimiento post-tratamiento</label>
-          </div>
-        </div>
-      </fieldset>
-      <fieldset>
-        <label for="suggestions-opinions">Sugerencias y Opiniones</label>
-        <textarea id="suggestions-opinions" cols="30" rows="3"> </textarea>
-      </fieldset>
-      <input type="submit" name="" value="Submit" id="submit" />
-    </form>
+        </fieldset>
+        <fieldset>
+          <label for="suggestions-opinions">Sugerencias y Opiniones</label>
+          <textarea
+            id="suggestions-opinions"
+            cols="30"
+            rows="3"
+            placeholder="Ingresa tus comentarios aquí..."
+          ></textarea>
+        </fieldset>
+        <input type="submit" name="" value="Submit" id="submit" />
+      </form>
+    </div>
   </body>
 </html>
